@@ -1,8 +1,10 @@
-IP_WHITELIST=whitelist
-PORT_LIST=portlist
 
-LAST_IP_WHITELIST=last_whitelist
-LAST_PORT_LIST=last_portlist
+ROOT_DIR=/home/kunl/tools/iptable
+IP_WHITELIST=$ROOT_DIR/whitelist
+PORT_LIST=$ROOT_DIR/portlist
+
+LAST_IP_WHITELIST=$ROOT_DIR/last_whitelist
+LAST_PORT_LIST=$ROOT_DIR/last_portlist
 
 whitelist=`sudo cat $IP_WHITELIST`
 last_whitelist=`sudo cat $LAST_IP_WHITELIST`
@@ -23,6 +25,14 @@ then
 echo "no ip_whitelist change";
 exit 0;
 fi;
+
+#copy to slave server
+scp $PORT_LIST kunl@118.25.14.190:/home/kunl/iptable_config
+scp $IP_WHITELIST kunl@118.25.14.190:/home/kunl/iptable_config
+scp $PORT_LIST kunl@fire.tpson.cn:/home/kunl/iptable_config
+scp $IP_WHITELIST kunl@fire.tpson.cn:/home/kunl/iptable_config
+
+exit 0;
 
 #clear current rule and close specific port
 echo "clear current iptables";
