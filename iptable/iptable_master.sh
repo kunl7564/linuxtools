@@ -1,4 +1,4 @@
-
+#!/bin/bash
 ROOT_DIR=/home/guest/iptable_config
 IP_WHITELIST=$ROOT_DIR/whitelist
 PORT_LIST=$ROOT_DIR/portlist
