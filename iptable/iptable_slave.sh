@@ -32,7 +32,8 @@ sudo iptables -F tpson
 echo "close ports";
 
 for port in $portlist
-do echo "close $port"
+do
+isnum=`echo ${port:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; else echo "close $port"; fi;
 sudo iptables -I tpson -p tcp --dport $port -j DROP
 done
 
@@ -40,9 +41,11 @@ done
 for ip in $whitelist
 do
 
+isnum=`echo ${ip:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; fi;
 #open specific ip
 for port in $portlist
-do echo "open $ip $port"
+do
+isnum=`echo ${port:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; else echo "open $ip $port"; fi;
 sudo iptables -s $ip -I tpson -p tcp --dport $port -j ACCEPT
 done
 
