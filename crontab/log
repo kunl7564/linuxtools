@@ -1,0 +1,256 @@
+['-c', 'start_date=2018-03-30\\ 0:0:0', '-c', 'end_date=2018-03-30\\ 15:01:40', '/work/gerrit/gerrit_site/git/android_fire_control.git', '/work/gerrit/gerrit_site/git/android_intelligent_community.git', '/work/gerrit/gerrit_site/git/android_isystem_cloud.git', '/work/gerrit/gerrit_site/git/android_isystem.git', '/work/gerrit/gerrit_site/git/android_nfc_tools.git', '/work/gerrit/gerrit_site/git/device_communication_jar.git', '/work/gerrit/gerrit_site/git/elec_safety_embedded.git', '/work/gerrit/gerrit_site/git/electrical_safety_bootloader.git', '/work/gerrit/gerrit_site/git/electrical_safety_embedded.git', '/work/gerrit/gerrit_site/git/electrical_safety.git', '/work/gerrit/gerrit_site/git/epcs.git', '/work/gerrit/gerrit_site/git/firecloud_platform.git', '/work/gerrit/gerrit_site/git/fire_cloud_v2_vue.git', '/work/gerrit/gerrit_site/git/homepage.git', '/work/gerrit/gerrit_site/git/hw_config_tools.git', '/work/gerrit/gerrit_site/git/inspect_android_tpson.git', '/work/gerrit/gerrit_site/git/inspect_ios_tpson.git', '/work/gerrit/gerrit_site/git/intelligent_community.git', '/work/gerrit/gerrit_site/git/ios_fire_control.git', '/work/gerrit/gerrit_site/git/ios_intelligent_community.git', '/work/gerrit/gerrit_site/git/jfinal-authority-plugin.git', '/work/gerrit/gerrit_site/git/Private-Projects.git', '/work/gerrit/gerrit_site/git/ROM.git', '/work/gerrit/gerrit_site/git/smoke_transmitter.git', '/work/gerrit/gerrit_site/git/sql-builder.git', '/work/gerrit/gerrit_site/git/test.git', '/work/gerrit/gerrit_site/git/tp_fire_cloud.git', '/work/gerrit/gerrit_site/git/tpong_device_router_firmware.git', '/work/gerrit/gerrit_site/git/tpson_device_center_service.git', '/work/gerrit/gerrit_site/git/tpson_device_center_web.git', '/work/gerrit/gerrit_site/git/tpson_device_protocol_router_v1.git', '/work/gerrit/gerrit_site/git/tpson_device_router.git', '/work/gerrit/gerrit_site/git/tpson_device_router_woker.git', '/work/gerrit/gerrit_site/git/tpson_id_util.git', '/work/gerrit/gerrit_site/git/tpson_open_api_server.git', '/work/gerrit/gerrit_site/git/userinfo_transmitter.git', '/work/gerrit/gitstats/day']
+[0.00435] >> gnuplot --version
+Output path: /work/gerrit/gitstats/day
+Loading cache...
+Git path: /work/gerrit/gerrit_site/git/android_fire_control.git
+Collecting data...
+[0.00292] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00234] >> git show-ref --tags
+[0.00284] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/android_intelligent_community.git
+Collecting data...
+[0.00290] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00227] >> git show-ref --tags
+[0.00295] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/android_isystem_cloud.git
+Collecting data...
+[0.00242] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00208] >> git show-ref --tags
+[0.00270] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/android_isystem.git
+Collecting data...
+[0.00246] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00206] >> git show-ref --tags
+[0.00269] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/android_nfc_tools.git
+Collecting data...
+[0.00262] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00214] >> git show-ref --tags
+[0.00286] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/device_communication_jar.git
+Collecting data...
+[0.00280] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00223] >> git show-ref --tags
+[0.00267] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/elec_safety_embedded.git
+Collecting data...
+[0.00286] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00203] >> git show-ref --tags
+[0.00272] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/electrical_safety_bootloader.git
+Collecting data...
+[0.00281] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00210] >> git show-ref --tags
+[0.00271] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/electrical_safety_embedded.git
+Collecting data...
+[0.00265] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00206] >> git show-ref --tags
+[0.00293] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/electrical_safety.git
+Collecting data...
+[0.00300] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00233] >> git show-ref --tags
+[0.00263] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/epcs.git
+Collecting data...
+[0.00329] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00270] >> git show-ref --tags
+[0.00296] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/firecloud_platform.git
+Collecting data...
+[0.00256] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00204] >> git show-ref --tags
+[0.00291] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/fire_cloud_v2_vue.git
+Collecting data...
+[0.00341] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00239] >> git show-ref --tags
+[0.00358] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+[0.00354] >> git rev-list --pretty=format:"%at %T" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+revlines ['1522392343 81624e7d560ff6074e51ce88798cffd0d5f8155d', '1522389929 adeccad0a22a7be4c321baee3aa33301fa3b5981', '1522378911 a7d3bc9713cc74482e0fd4dac80c2cc185a3d824', '1522373096 7c47a53e203acd90df856b9e9c372e02633cd5bf']
+[0.00434] >> git ls-tree -r -l -z HEAD
+[0.00703] >> git log --shortstat --first-parent -m --pretty=format:"%at %aN" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=*
+[0.00601] >> git log --shortstat --date-order --pretty=format:"%at %aN" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=*
+Git path: /work/gerrit/gerrit_site/git/homepage.git
+Collecting data...
+[0.00371] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00242] >> git show-ref --tags
+[0.00448] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/hw_config_tools.git
+Collecting data...
+[0.00338] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00240] >> git show-ref --tags
+[0.00335] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/inspect_android_tpson.git
+Collecting data...
+[0.00365] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00273] >> git show-ref --tags
+[0.00360] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/inspect_ios_tpson.git
+Collecting data...
+[0.00325] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00242] >> git show-ref --tags
+[0.00356] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/intelligent_community.git
+Collecting data...
+[0.00403] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00302] >> git show-ref --tags
+[0.00389] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/ios_fire_control.git
+Collecting data...
+[0.00419] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00318] >> git show-ref --tags
+[0.00420] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/ios_intelligent_community.git
+Collecting data...
+[0.00348] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00251] >> git show-ref --tags
+[0.00358] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/jfinal-authority-plugin.git
+Collecting data...
+[0.00336] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00245] >> git show-ref --tags
+[0.00362] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/Private-Projects.git
+Collecting data...
+[0.00316] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00238] >> git show-ref --tags
+[0.00340] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/ROM.git
+Collecting data...
+[0.00324] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00234] >> git show-ref --tags
+[0.00360] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/smoke_transmitter.git
+Collecting data...
+[0.00336] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00239] >> git show-ref --tags
+[0.00342] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/sql-builder.git
+Collecting data...
+[0.00325] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00238] >> git show-ref --tags
+[0.00357] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/test.git
+Collecting data...
+[0.00332] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00242] >> git show-ref --tags
+[0.00346] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/tp_fire_cloud.git
+Collecting data...
+[0.00558] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00450] >> git show-ref --tags
+[0.00606] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+[0.00629] >> git rev-list --pretty=format:"%at %T" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+revlines ['1522391505 6a4267f7ade0e950ab71a93551c32b0d48dac562', '1522390583 a9480088c96d0e3cc1b69c602e1055f046671155', '1522390201 77c0df360aee78b78ee39aa7c966751c07ab8426', '1522390199 b1e3857f88ee8fea9b23e45865ecf03a73a4ffd5', '1522390036 146621142564c39204b9ecd4e49613decff3dfd1', '1522388358 d75b3b1dcf69ed3b9a110839e4b8d7feae9f03bb', '1522385339 26134f418bcbf437bec1b9f4dc5329441aea3403', '1522384220 352fa614f7efbc83bd31d0444fa175acaff0eb0a', '1522387004 68e466adb2325f0336057547b6ad4bcb63a3a323', '1522386021 b3bbede4bb9d03a6b80411cc90deed09231f8088', '1522380712 ccf87445b78d928e3a1f85161fa14dbb6cac76ff', '1522380111 b1161c4ca24b6c685828025701da4d52ce333384', '1522379425 46ce9297407e567f1bfc5f537d6b390daf11c934', '1522379418 ddd7645acd6f0b6cf511179e6644a6e54be807fa', '1522379412 8d921d24dc5f96b7b32b832e3bcf2729e2e2f6de', '1522379406 c12ac6ba58bf8cfb0b2514a61f26291e694da102', '1522378413 4757a395b323bf66b52baed80b7ab8ded5ba7324', '1522378002 1b70a8a22db43348cf83ee31a4a08804c26fa0ef', '1522377924 440d44f91dfbcbb91b95f0f4e7d5f7e8b737ab55', '1522377837 f1b28ca4614fb0f589b68f0174c2424fa69592d2', '1522376926 cd76d142cf83bda5cf115e5dd84beeb3d2a57a37', '1522376034 092dd1e90bfe11485b4136c613e6cb47738c07ce', '1522375975 6ee31d81d6fa8687e6f5fac9ab9bbc6c796adba6', '1522375238 71ef2a6aec90b62922df22a4ff4b400b8f129b5d', '1522370300 7c6d5ed6412756be805caf3140e72e955aaaa98d']
+[0.01072] >> git ls-tree -r -l -z HEAD
+[0.01510] >> git log --shortstat --first-parent -m --pretty=format:"%at %aN" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=*
+[0.02460] >> git log --shortstat --date-order --pretty=format:"%at %aN" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=*
+Git path: /work/gerrit/gerrit_site/git/tpong_device_router_firmware.git
+Collecting data...
+[0.00425] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00278] >> git show-ref --tags
+[0.00401] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: ['1522374391 2018-03-30 09:46:31 +0800 wuqinghua <wuqinghua@tpson.cn>'] 1
+Git path: /work/gerrit/gerrit_site/git/tpson_device_center_service.git
+Collecting data...
+[0.00360] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00246] >> git show-ref --tags
+[0.00339] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/tpson_device_center_web.git
+Collecting data...
+[0.00343] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00237] >> git show-ref --tags
+[0.00357] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/tpson_device_protocol_router_v1.git
+Collecting data...
+[0.00334] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00241] >> git show-ref --tags
+[0.00349] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/tpson_device_router.git
+Collecting data...
+[0.00339] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00267] >> git show-ref --tags
+[0.00368] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+[0.00350] >> git rev-list --pretty=format:"%at %T" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+revlines ['1522392445 ce584278d6261ac34a5de899cf4abd69cbef6987', '1522375492 1951307f4f64145d33d4062a8039a3fdc1a51276']
+[0.00460] >> git ls-tree -r -l -z HEAD
+[0.00662] >> git log --shortstat --first-parent -m --pretty=format:"%at %aN" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=*
+[0.00571] >> git log --shortstat --date-order --pretty=format:"%at %aN" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=*
+Git path: /work/gerrit/gerrit_site/git/tpson_device_router_woker.git
+Collecting data...
+[0.00336] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00256] >> git show-ref --tags
+[0.00364] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/tpson_id_util.git
+Collecting data...
+[0.00332] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00249] >> git show-ref --tags
+[0.00357] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/tpson_open_api_server.git
+Collecting data...
+[0.00341] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00252] >> git show-ref --tags
+[0.00345] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Git path: /work/gerrit/gerrit_site/git/userinfo_transmitter.git
+Collecting data...
+[0.00322] >> git shortlog -s --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | wc -l
+[0.00237] >> git show-ref --tags
+[0.00357] >> git rev-list --pretty=format:"%at %ai %aN <%aE>" --since=2018-03-30\ 0:0:0 --until=2018-03-30\ 15:01:40 HEAD --branches=* | grep -v ^commit
+lines: [''] 1
+Refining data...
+Saving cache...
+Generating report...
+[0.00248] >> git --version
+[0.00476] >> gnuplot --version
+Generating graphs...
+[0.01012] >> gnuplot "/work/gerrit/gitstats/day/hour_of_day.plot"
+[0.00979] >> gnuplot "/work/gerrit/gitstats/day/commits_by_year.plot"
+[0.01048] >> gnuplot "/work/gerrit/gitstats/day/month_of_year.plot"
+[0.01595] >> gnuplot "/work/gerrit/gitstats/day/lines_of_code_by_author.plot"
+[0.01003] >> gnuplot "/work/gerrit/gitstats/day/day_of_week.plot"
+[0.01213] >> gnuplot "/work/gerrit/gitstats/day/files_by_date.plot"
+[0.01574] >> gnuplot "/work/gerrit/gitstats/day/commits_by_author.plot"
+[0.00964] >> gnuplot "/work/gerrit/gitstats/day/domains.plot"
+[0.01048] >> gnuplot "/work/gerrit/gitstats/day/commits_by_year_month.plot"
+[0.01146] >> gnuplot "/work/gerrit/gitstats/day/lines_of_code.plot"
+Execution time 1.32629 secs, 0.55673 secs (41.98 %) in external commands)
+You may now run:
+
+   sensible-browser '/work/gerrit/gitstats/day/index.html'
+
+2018-03-30\ 0:0:0 2018-03-30\ 15:01:40
+2018-03-24\ 0:0:0 2018-03-30\ 15:01:40
+2018-03-01\ 0:0:0 2018-03-30\ 15:01:40
