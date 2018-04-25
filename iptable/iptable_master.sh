@@ -3,8 +3,8 @@ ROOT_DIR=/home/guest/iptable_config
 IP_WHITELIST=$ROOT_DIR/whitelist
 PORT_LIST=$ROOT_DIR/portlist
 
-LAST_IP_WHITELIST=$ROOT_DIR/last_whitelist
-LAST_PORT_LIST=$ROOT_DIR/last_portlist
+LAST_IP_WHITELIST=$ROOT_DIR/.last_whitelist
+LAST_PORT_LIST=$ROOT_DIR/.last_portlist
 
 whitelist=`sudo cat $IP_WHITELIST`
 last_whitelist=`sudo cat $LAST_IP_WHITELIST`
