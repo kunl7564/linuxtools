@@ -89,12 +89,13 @@ do
 done
 
 
+#allow specific ip to access restricted ports
 sudo cat $IP_WHITELIST | while read ipline;
 do
 	isnum=`echo ${ipline:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; fi;
 	validDate=`echo $ipline | awk '{print $2}'`	
 	#有效期小于当前时间,过期
-	if [ "$validDate" == "" ] || [ $currentDate -le $validDate ]; then echo $ipline expired!;else continue;fi;
+	if [ "$validDate" == "" ] || [ $currentDate -le $validDate ]; then echo $ipline valid!; else continue;fi;
 	ip=`echo $ipline | awk '{print $1}'`
 	#open specific ip
 	for port in $portlist
@@ -104,6 +105,35 @@ do
 		sudo iptables -s $ip -I tpson -p tcp --dport $port -j ACCEPT
 	done
 done
+
+#handle nginx case
+NGINX_IPTABLE="/etc/nginx/conf.d/iptable.cfg"
+if [ -f "$NGINX_IPTABLE" ]
+then
+	#clear current iptable.cfg
+        sudo echo "" > $NGINX_IPTABLE
+	sudo cat $IP_WHITELIST | while read ipline;
+	do
+	        isnum=`echo ${ipline:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; fi;
+	        validDate=`echo $ipline | awk '{print $2}'`
+	        #有效期小于当前时间,过期
+	        if [ "$validDate" == "" ] || [ $currentDate -le $validDate ]; then echo $ipline valid!;else continue;fi;
+	        ip=`echo $ipline | awk '{print $1}'`
+		sudo echo "allow $ip;" >> $NGINX_IPTABLE
+	done
+
+	sudo echo "deny all;" >> $NGINX_IPTABLE
+
+	sudo nginx -t
+	if [ "$?" == "0" ]
+	then
+		echo "reload nginx"
+		sudo nginx -s reload
+	else
+		#something wrong, roll back
+		sudo echo "" > $NGINX_IPTABLE
+	fi;
+fi;
 
 sudo cat $IP_WHITELIST > $LAST_IP_WHITELIST
 sudo cat $PORT_LIST > $LAST_PORT_LIST

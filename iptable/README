@@ -1,0 +1,12 @@
+whitelist 文件表示放行的ip,相当于白名单
+portlist 文件表示要封锁的端口,相当于黑名单
+
+备注：
+如果要限制nginx反向代理的端口，管理员需要在对应的配置文件做以下操作:
+例如修改消控：
+/etc/nginx/conf.d/fire.conf
+
+1.在fire.conf的server节点下添加
+include /etc/nginx/conf.d/iptable.cfg;
+2.新建/etc/nginx/conf.d/iptable.cfg文件，如果检查到这个文件不存在，将不会执行nginx过滤
+
