@@ -50,7 +50,7 @@ if __name__ == '__main__':
             # 获取本机ip
             ip = socket.gethostbyname(myname)
             subject = ip + " cpu占用异常!"
-            if len(sys.argv) > 1
+            if len(sys.argv) > 1:
                 subject = sys.argv[1] + " cpu占用异常!"
             topfile = open('.top');
             try:
