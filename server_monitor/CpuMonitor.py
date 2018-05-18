@@ -16,7 +16,7 @@ class CpuMonitorThread(threading.Thread):
         self.threshold = threshold
         self.pollingGap = pollingGap
     def run(self):
-        print "Starting " + "CpuMonitorThread"
+        print "Starting CpuMonitorThread on " + self.serverName
         subject = self.serverName + " cpu占用异常!"
         alarm = False
         maillist = "liuandong@tpson.cn;wuqinghua@tpson.cn;mayuefeng@tpson.cn;liangkun@tpson.cn;caifushou@tpson.cn"

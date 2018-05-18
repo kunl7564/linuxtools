@@ -13,7 +13,7 @@ class MemMonitorThread(threading.Thread):
         self.threshold = threshold
         self.pollingGap = pollingGap
     def run(self):
-        print "Starting " + "MemMonitorThread"
+        print "Starting MemMonitorThread on " + self.serverName
         subject = self.serverName + " 内存报警!"
         alarm = False
 #         maillist = "liangkun@tpson.cn;"
