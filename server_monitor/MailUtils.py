@@ -23,7 +23,7 @@ def sendMail(receiver, subject, content):
     loginRet = smtp.login(username, password)
     sendRet = smtp.sendmail(sender, receiver, msg.as_string())
     smtp.quit()
-    print ("Email has been sent out!", loginRet, sendRet)
+    print ("Email has been sent out!", loginRet, sendRet, subject)
     return
 
 #sendMail("liangkun@tpson.cn;liangkun@tpson.cn", "subject", "content")
