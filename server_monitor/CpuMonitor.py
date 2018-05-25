@@ -19,7 +19,7 @@ class CpuMonitorThread(threading.Thread):
         print "Starting CpuMonitorThread on " + self.serverName
         subject = self.serverName + " cpu占用异常!"
         alarm = False
-        maillist = "liuandong@tpson.cn;wuqinghua@tpson.cn;mayuefeng@tpson.cn;liangkun@tpson.cn;caifushou@tpson.cn"
+        maillist = "liangkun@tpson.cn;liuandong@tpson.cn;wuqinghua@tpson.cn;caifushou@tpson.cn;mayuefeng@tpson.cn"
         while True:
             # 获取本机ip
             if SystemUtils.getCpuUsage(1) > self.threshold:

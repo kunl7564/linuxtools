@@ -16,7 +16,7 @@ def sendMail(receiver, subject, content):
     '''中文需参数‘utf-8’ ，单字节字符不需要'''
     msg = MIMEText(content, 'plain', 'utf-8')
     msg['Subject'] = subject
-    msg['From'] = "拓深服务器管理<dev@tpson.cn>"
+    msg['From'] = "拓深服务器管理<liangkun@tpson.cn>"
     msg['To'] = receiver
     smtp = smtplib.SMTP_SSL(smtpserver, port=465)
     smtp.connect(smtpserver)
@@ -26,4 +26,5 @@ def sendMail(receiver, subject, content):
     print ("Email has been sent out!", loginRet, sendRet, subject)
     return
 
-#sendMail("liangkun@tpson.cn;liangkun@tpson.cn", "subject", "content")
+#maillist = "liangkun@tpson.cn;liuandong@tpson.cn;wuqinghua@tpson.cn;caifushou@tpson.cn;mayuefeng@tpson.cn"
+#sendMail(maillist, "test", "content")

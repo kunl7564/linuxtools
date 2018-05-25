@@ -16,8 +16,7 @@ class MemMonitorThread(threading.Thread):
         print "Starting MemMonitorThread on " + self.serverName
         subject = self.serverName + " 内存报警!"
         alarm = False
-#         maillist = "liangkun@tpson.cn;"
-        maillist = "liuandong@tpson.cn;wuqinghua@tpson.cn;mayuefeng@tpson.cn;liangkun@tpson.cn;caifushou@tpson.cn"
+	maillist = "liangkun@tpson.cn;liuandong@tpson.cn;wuqinghua@tpson.cn;caifushou@tpson.cn;mayuefeng@tpson.cn"
         while True:
             freeMem = SystemUtils.getFreeMemory()
             if SystemUtils.getFreeMemory() < self.threshold:
