@@ -17,12 +17,12 @@ class CpuMonitorThread(threading.Thread):
         self.pollingGap = pollingGap
     def run(self):
         print "Starting CpuMonitorThread on " + self.serverName
-        subject = self.serverName + " cpu占用异常!"
+        subject = self.serverName + " cpu持续占用异常!"
         alarm = False
         maillist = "liangkun@tpson.cn;liuandong@tpson.cn;wuqinghua@tpson.cn;caifushou@tpson.cn;mayuefeng@tpson.cn"
         while True:
             # 获取本机ip
-            if SystemUtils.getCpuUsage(1) > self.threshold:
+            if SystemUtils.getCpuUsage(60) > self.threshold:
                 if alarm == False:
                     alarm = True
                     toptext = os.popen('top -b -n 1').read()

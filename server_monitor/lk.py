@@ -10,8 +10,8 @@ if __name__ == '__main__':
     server = "testserver"
     if len(sys.argv) > 1:
         server = sys.argv[1]
-    cpuThread = CpuMonitorThread(server, 85, 10)
+    cpuThread = CpuMonitorThread(server, 90, 60)
     cpuThread.start()
-    memThread = MemMonitorThread(server, 1300, 1)
+    memThread = MemMonitorThread(server, 1300, 5)
     memThread.start()
     sleep(1)
