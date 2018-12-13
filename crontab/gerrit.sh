@@ -10,6 +10,6 @@ time mkdir -p $GERRIT_BAK_ROOT
 time scp -r root@review.tpson.cn:/work/gerrit/gerrit_site $GERRIT_BAK_ROOT/bak"$DATE"
 #time scp -r kunl@182.61.39.220:/work/kunl/ss $GERRIT_BAK_ROOT/bak"$DATE"
 
-#备份成功后，就删除14天以前的备份
+#备份成功后，就删除10天以前的备份
 cd $GERRIT_BAK_ROOT
-if [ $? == 0 ];then echo ok;find * -prune -name "bak[0-9]*" -mtime +14 | xargs rm -rf;  else echo ==backup failed==;fi;
+if [ $? == 0 ];then echo ok;find * -prune -name "bak[0-9]*" -mtime +10 | xargs rm -rf;  else echo ==backup failed==;fi;
