@@ -11,12 +11,12 @@ echo $USERNAME
 sudo useradd $USERNAME 
 sudo passwd $USERNAME
 
-sudo mkdir /work/$USERNAME
-#sudo chown $USERNAME:$USERNAME /work/$USERNAME
-sudo chmod 755 /work/$USERNAME
+sudo mkdir /home/$USERNAME
+#sudo chown $USERNAME:$USERNAME /home/$USERNAME
+sudo chmod 755 /home/$USERNAME
 
-sudo ln -s /work/$USERNAME /home/$USERNAME
+sudo ln -s /home/$USERNAME /home/$USERNAME
 #sudo chown $USERNAME:$USERNAME /home/$USERNAME
 
-sudo cp -n /work/kunl/tools/env_init/.bashrc /work/$USERNAME
-sudo chown -R $USERNAME:$USERNAME /work/$USERNAME
+sudo cp -n /home/kunl/tools/env_init/.bashrc /home/$USERNAME
+sudo chown -R $USERNAME:$USERNAME /home/$USERNAME
