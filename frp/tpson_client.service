@@ -1,0 +1,14 @@
+[Unit]
+Description=Tpson Client Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=on-failure
+RestartSec=2s
+ExecStart=/home/tpson/netproxy/tpson_client -c /home/tpson/netproxy/tpson_client.ini
+
+[Install]
+WantedBy=multi-user.target
+
