@@ -13,4 +13,4 @@ cd $SVN_BAK_ROOT
 filename=`ls | wc | awk '{print $1}'`
 #最小保留一定的数目
 if [ $filename -lt 4 ];then echo "no need delete"; exit 0; else echo "let's go"; fi;
-if [ $? == 0 ];then echo ok;find * -prune -name "bak[0-9]*" -mtime +10 | xargs sudo rm -rf;  else echo ==backup failed==;fi;
+if [ $? == 0 ];then echo ok;find * -prune -name "bak[0-9]*" -mtime +15 | xargs sudo rm -rf;  else echo ==backup failed==;fi;
