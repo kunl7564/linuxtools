@@ -26,16 +26,16 @@ GITSTATS_DAY=$GITSTATS_ROOT/day
 GITSTATS_WEEK=$GITSTATS_ROOT/week
 GITSTATS_MONTH=$GITSTATS_ROOT/month
 GITSTATS_YEAR=$GITSTATS_ROOT/year
-sudo mkdir -p $GITSTATS_WEEK $GITSTATS_MONTH
+sudo mkdir -p $GITSTATS_DAY $GITSTATS_WEEK $GITSTATS_MONTH $GITSTATS_YEAR
 
 #统计当天
-#sudo gitstats -c start_date="$DAY_START" -c end_date="$DAY_END" $GERRIT_ROOT/[^A]*.git  $GITSTATS_DAY
+sudo gitstats -c start_date="$DAY_START" -c end_date="$DAY_END" $GERRIT_ROOT/[^A]*.git  $GITSTATS_DAY
 #统计上周末到本周当天
 sudo gitstats -c start_date="$WEEK_START" -c end_date="$WEEK_END" $GERRIT_ROOT/[^A]*.git  $GITSTATS_WEEK
 #统计本月
 sudo gitstats -c start_date="$MONTH_START" -c end_date="$MONTH_END" $GERRIT_ROOT/[^A]*.git  $GITSTATS_MONTH
 #统计本年
-#sudo gitstats -c start_date="$YEAR_START" -c end_date="$YEAR_END" $GERRIT_ROOT/[^A]*.git  $GITSTATS_YEAR
+sudo gitstats -c start_date="$YEAR_START" -c end_date="$YEAR_END" $GERRIT_ROOT/[^A]*.git  $GITSTATS_YEAR
 
 
 #sudo gitstats -c start_date=2018-3-30 -c end_date=2018-3-30 /work/gerrit/gerrit_site/git/tp_fire_cloud.git tmp
