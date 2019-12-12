@@ -34,12 +34,16 @@ else
 fi
 
 IP_WHITELIST=$ROOT_DIR/whitelist
+# interface for other scripts
+DYNAMIC_IP_WHITELIST=$ROOT_DIR/ip.txt
+if [ -f $DYNAMIC_IP_WHITELIST ]; then echo "dynamic ip.txt exist"; else touch $DYNAMIC_IP_WHITELIST; fi;
+
 PORT_LIST=$ROOT_DIR/portlist
 
 LAST_IP_WHITELIST=$ROOT_DIR/.last_whitelist
 LAST_PORT_LIST=$ROOT_DIR/.last_portlist
 
-whitelist=`sudo cat $IP_WHITELIST`
+whitelist=`sudo cat $DYNAMIC_IP_WHITELIST $IP_WHITELIST`
 last_whitelist=`sudo cat $LAST_IP_WHITELIST`
 portlist=`sudo cat $PORT_LIST`
 last_portlist=`sudo cat $LAST_PORT_LIST`
@@ -90,7 +94,7 @@ done
 
 
 #allow specific ip to access restricted ports
-sudo cat $IP_WHITELIST | while read ipline;
+sudo cat $DYNAMIC_IP_WHITELIST $IP_WHITELIST | while read ipline;
 do
 	isnum=`echo ${ipline:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; fi;
 	validDate=`echo $ipline | awk '{print $2}'`	
@@ -112,7 +116,7 @@ if [ -f "$NGINX_IPTABLE" ]
 then
 	#clear current iptable.cfg
         sudo echo "" > $NGINX_IPTABLE
-	sudo cat $IP_WHITELIST | while read ipline;
+	sudo cat $DYNAMIC_IP_WHITELIST $IP_WHITELIST | while read ipline;
 	do
 	        isnum=`echo ${ipline:0:1} | grep [0-9]`;if [ "$isnum" == "" ]; then continue; fi;
 	        validDate=`echo $ipline | awk '{print $2}'`
@@ -135,5 +139,5 @@ then
 	fi;
 fi;
 
-sudo cat $IP_WHITELIST > $LAST_IP_WHITELIST
+sudo cat $DYNAMIC_IP_WHITELIST $IP_WHITELIST > $LAST_IP_WHITELIST
 sudo cat $PORT_LIST > $LAST_PORT_LIST
