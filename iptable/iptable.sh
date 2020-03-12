@@ -54,6 +54,10 @@ last_portlist=`sudo cat $LAST_PORT_LIST`
 #done
 #exit 0
 
+#TODO: remove ip constrain temporarily
+#sudo iptables -F tpson
+#exit 0
+
 if [ "$whitelist" == "" ]
 then
 	sudo iptables -F tpson 
