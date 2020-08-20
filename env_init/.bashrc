@@ -1,4 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
+alias p='python'
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -114,12 +115,36 @@ if ! shopt -oq posix; then
 fi
 
 alias px='ps -aux'
+alias p='python'
+alias p3='python3'
 
 alias tattach='tmux attach-session -t'
 alias tnew='tmux new -s'
 alias tkill='tmux kill-window -t'
 alias tls='tmux ls'
+alias gitpush='git push -u origin master'
+alias lkprotect='sudo chattr +a'
+alias lknoprotect='sudo chattr -a'
+alias lkuninstall='sudo apt-get remove --purge'
+alias ftplog='sudo less /var/log/vsftpd.log'
+alias psservice='sudo systemctl status' 
+#systemctl status vsftpd.service
 
 alias sgrep='grep -rn'
 alias sfind='find . -name'
+alias sonar='/home/kunl/sonarqube-7.0/bin/linux-x86-64/sonar.sh'
+alias javasonar='mvn compile;mvn sonar:sonar -Dsonar.host.url=http://47.100.63.41:9000 -Dsonar.login=e517411d30a212973013230aae0af2686887259a'
+alias websonar='sonar-scanner -Dsonar.projectKey=fire_web -Dsonar.sources=. -Dsonar.host.url=http://47.100.63.41:9000 -Dsonar.login=e517411d30a212973013230aae0af2686887259a'
+alias sonar-scanner='/work/kunl/sonarqube-7.0/tpsonlinuxscanner/sonar-scanner-3.1.0.1141-linux/bin/sonar-scanner'
+#gitstat='~/tools/git/gitstat.sh'
+alias lsport='sudo netstat -tunlp'
 
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+
+alias listenport='nc -l'
+alias nmapu='sudo nmap -sU'
+alias nmapt='sudo nmap -sT'
+alias checkport='netstat -anp'
+
+alias setnomodify='sudo chattr +i'
+alias setcanmodify='sudo chattr -i'
